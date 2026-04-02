@@ -177,7 +177,7 @@ const professionalProjects = computed(() => {
 
 const sideProjects = computed(() => {
   const projMap = tm('projects.list') as Record<string, any>;
-  return ['infra', 'nodejs_ecommerce', 'nestjs_ecommerce'].map(key => {
+  return ['infra', 'nodejs_ecommerce', 'nestjs_ecommerce', 'portfolio'].map(key => {
     const data = projMap[key] || {}
     return {
       title: data.title ? rt(data.title) : '',

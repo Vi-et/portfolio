@@ -10,12 +10,12 @@
     "system_ready": "logger.info(\"hệ thống sẵn sàng: OK\")",
     "title1": "BACKEND",
     "title2": "ENGINEER",
-    "description": "Xây dựng **kiến trúc hệ thống mở rộng**, API đáng tin cậy và database schema vững chắc. Hiệu suất được đo lường, không giả định.",
-    "view_systems": "Xem_Hệ_Thống",
-    "init_contact": "// kb_liên_hệ"
+    "description": "Xây dựng **kiến trúc hệ thống mở rộng**, API tin cậy, database schema vững chắc và hiệu suất có thể đo lường.",
+    "view_systems": "Dự_án",
+    "init_contact": "// liên_hệ"
   },
   "career": {
-    "title": "LỊCH_SỬ_SỰ_NGHIỆP",
+    "title": "Log_Công_Việc",
     "subtitle": "QUÁ_TRÌNH_LÀM_VIỆC",
     "years_short": "n",
     "months_short": "th",
@@ -25,9 +25,9 @@
         "role": "Lập trình viên Backend",
         "company": "Genkin",
         "highlights": [
-          "Xây dựng hệ thống **CRM**, **Ecommerce**, và **Quản lý kho** (**task, khiếu nại, nhập kho, vận chuyển**)",
+          "Xây dựng hệ thống **CRM**, **Ecommerce**, và **Quản lý kho** (**task, khiếu nại, xuất nhập kho, vận chuyển**)",
           "Phát triển **hệ thống cào dữ liệu và đấu giá** cho các sàn Nhật JP",
-          "Tự động hóa quy trình mua hàng và đấu giá trên **Mercari, Yahoo Auctions**",
+          "Tự động hóa quy trình mua hàng và đấu giá trên **Mercari, Yahoo Auctions** (thay thế hoàn toàn thao tác thủ công)",
           "Thiết kế hệ thống **đồng bộ tài chính JPY-VND** với tính năng **cào sao kê ngân hàng**",
           "**Thiết kế database schema** & **cập nhật hạ tầng không downtime**",
           "Sử dụng **Redis caching** & **job queues** để **tối ưu hiệu suất (performance optimization)**",
@@ -72,7 +72,7 @@
     }
   },
   "projects": {
-    "title": "DANH_MỤC_HỆ_THỐNG",
+    "title": "DỰ_ÁN",
     "subtitle": "KIẾN_TRÚC_ĐÃ_TRIỂN_KHAI",
     "tabs": {
       "professional": "[CHUYÊN_NGHIỆP]",
@@ -195,6 +195,23 @@
           "Docker"
         ],
         "link": "https://github.com/Vi-et/nestjs-ecommerce"
+      },
+      "portfolio": {
+        "title": "Portfolio AI & Vibe Coding",
+        "description": "Dự án thực nghiệm tập trung vào **Vibe Coding** và quy trình làm việc với **AI Agent**.",
+        "achievements": [
+          "Sử dụng **AI Agents** để đồng kiến trúc và triển khai toàn bộ hệ thống chuyên nghiệp.",
+          "Áp dụng triết lý **Vibe Coding** để tối ưu hóa thẩm mỹ và trải nghiệm người dùng nhanh chóng.",
+          "Tích hợp **GSAP animations** và **đa ngôn ngữ (i18n)**, tối ưu cho SEO."
+        ],
+        "tech": [
+          "Nuxt 4",
+          "Vue 3",
+          "GSAP",
+          "i18n",
+          "AI Agents"
+        ],
+        "link": "https://github.com/Vi-et/portfolio"
       }
     }
   },
@@ -216,7 +233,8 @@
   "contact": {
     "title1": "KHỞI_TẠO",
     "title2": "KẾT_NỐI",
-    "description": "Sẵn sàng cho các hợp đồng tư vấn kiến trúc backend, tối ưu hệ thống tự do (freelance system refactor), hoặc các vị trí kỹ sư cấp cao (senior engineering) toàn thời gian.",
+    "description": "Sẵn sàng cho các cơ hội Lập trình viên Backend, hoặc cộng tác phát triển và tối ưu các hệ thống hiệu suất cao.",
+    "cta": "Sẵn sàng cho các cơ hội Lập trình viên Backend, hoặc cộng tác phát triển và tối ưu các hệ thống hiệu suất cao.",
     "button": "> gửi_email()",
     "mail_address": "nhatviet.mkt{'@'}gmail.com",
     "linkedin_url": "https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-nh%E1%BA%ADt-vi%E1%BB%87t-a69288400/",
@@ -225,5 +243,19 @@
     "endpoints": "// LIÊN_KẾT_MẠNG_XÃ_HỘI",
     "copyright": "TẤT CẢ HỆ THỐNG HOẠT ĐỘNG BÌNH THƯỜNG",
     "status": "TRẠNG_THÁI_MÁY_CHỦ: ONLINE"
+  },
+  "languages": {
+    "title": "NGÔN_NGỮ",
+    "list": [
+      { "name": "Tiếng Anh", "level": "Đủ để giao tiếp với khách hàng Úc", "code": "en" },
+      { "name": "Tiếng Nhật", "level": "Cơ bản", "code": "ja" }
+    ]
+  },
+  "interests": {
+    "title": "SỞ_THÍCH",
+    "list": [
+      { "name": "Tarot, Triết học & Phân tâm học", "icon": "🃏" },
+      { "name": "Tối ưu mọi thứ", "icon": "⚡" }
+    ]
   }
 }

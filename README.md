@@ -1,5 +1,7 @@
 # Backend Portfolio (Nuxt 4 + GSAP)
 
+A high-performance, brutalist-style portfolio designed for **Backend Engineers**. This project focuses on technical excellence, minimalist aesthetics, and brutalist typographic design.
+
 > [!NOTE]
 > This project serves as a practical space for exploring and mastering **AI Agents** and **Vibe Coding** workflows. Most of the architecture and implementation were co-piloted using advanced agentic coding patterns.
 

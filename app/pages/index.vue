@@ -18,6 +18,8 @@
 
     <Certificates id="certifications" class="pt-32" />
 
+    <LanguagesInterests class="pt-32" />
+
     <div class="mt-32 w-full h-px bg-emerald-500/30"></div>
     
     <ContactFooter id="contact" class="pt-32" />

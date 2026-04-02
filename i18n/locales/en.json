@@ -10,7 +10,7 @@
     "system_ready": "logger.info(\"system ready: OK\")",
     "title1": "BACKEND",
     "title2": "ENGINEER",
-    "description": "Building **scalable architectures**, reliable APIs, and bulletproof database schemas. Performance is measured, not assumed.",
+    "description": "Building **scalable architectures**, reliable APIs, bulletproof database schemas and measurable performance.",
     "view_systems": "View_Systems",
     "init_contact": "// init_contact"
   },
@@ -25,11 +25,11 @@
         "role": "Backend Developer",
         "company": "Genkin",
         "highlights": [
-          "Built **CRM**, **Ecommerce**, and **Warehouse management** systems (**tasks, complaints, inbound, logistics**)",
-          "Developed **web scraping pipelines and auction/bidding systems** for JP platforms",
-          "Automated purchasing and bidding workflows on **Mercari, Yahoo Auctions**",
+          "Built internal management systems including **CRM**, **Ecommerce**, and **Warehouse Management** (**tasks, claims, import, export, shipping**)",
+          "Developed **web scraping pipelines** and **auction/bidding systems** for JP platforms",
+          "Automated purchasing and bidding workflows on **Mercari, Yahoo Auctions** (replacing manual human operations)",
           "Designed **JPY-VND financial** system with **bank statement crawling**",
-          "**Database schema design** & **zero-downtime migrations**",
+          "**Database schema design** & **zero-downtime deploy**",
           "**Redis caching** & **job queues** for performance optimization",
           "**Docker containerization** & **CI/CD pipelines** (GitLab)",
           "**AWS infrastructure**: S3, EC2, Lambda, LightSail"
@@ -96,7 +96,16 @@
           "Migrated legacy database schema with **zero downtime** on production.",
           "Fully automated AWS infra (S3, EC2, Lambda) + **Redis + Docker + GitLab CI/CD**."
         ],
-        "tech": ["Django", "Celery", "Selenium", "Redis", "AWS", "Docker", "PostgreSQL", "GitLab CI"],
+        "tech": [
+          "Django",
+          "Celery",
+          "Selenium",
+          "Redis",
+          "AWS",
+          "Docker",
+          "PostgreSQL",
+          "GitLab CI"
+        ],
         "link": "https://ecommerce.genkin.asia/vi"
       },
       "crm": {
@@ -109,7 +118,15 @@
           "Reduced dashboard load with **Redis caching layer**; PostgreSQL query optimization.",
           "**Docker + GitLab CI/CD** pipeline; zero-downtime deployment to AWS."
         ],
-        "tech": ["Django", "DRF", "PostgreSQL", "Redis", "Docker", "AWS", "GitLab CI"],
+        "tech": [
+          "Django",
+          "DRF",
+          "PostgreSQL",
+          "Redis",
+          "Docker",
+          "AWS",
+          "GitLab CI"
+        ],
         "link": "https://ecommerce.genkin.asia/vi"
       },
       "maido": {
@@ -120,7 +137,13 @@
           "Developed **campaign reporting systems** with real-time performance indicators (KPIs).",
           "Engineered an **automated alert system** for budget fluctuations and ad performance anomalies."
         ],
-        "tech": ["Node.js", "MySQL", "Docker", "Redis", "Nginx"],
+        "tech": [
+          "Node.js",
+          "MySQL",
+          "Docker",
+          "Redis",
+          "Nginx"
+        ],
         "link": "https://www.facebook.com/maidoagency/"
       },
       "infra": {
@@ -131,7 +154,13 @@
           "Managed AWS infrastructure (VPC, ECS, RDS) with **Terraform** for high availability and scaling.",
           "Built **100% automated CI/CD** pipelines using **GitLab CI**."
         ],
-        "tech": ["Terraform", "AWS", "Docker", "GitLab CI", "Nginx"],
+        "tech": [
+          "Terraform",
+          "AWS",
+          "Docker",
+          "GitLab CI",
+          "Nginx"
+        ],
         "link": "https://github.com/Vi-et/infra"
       },
       "nodejs_ecommerce": {
@@ -142,7 +171,13 @@
           "Implemented **Elasticsearch** for high-performance product searching and filtering.",
           "Built a robust **Inventory Management** system with real-time stock synchronization."
         ],
-        "tech": ["Node.js", "MongoDB", "Redis", "RabbitMQ", "Elasticsearch"],
+        "tech": [
+          "Node.js",
+          "MongoDB",
+          "Redis",
+          "RabbitMQ",
+          "Elasticsearch"
+        ],
         "link": "https://github.com/Vi-et/nodejs-ecommerce"
       },
       "nestjs_ecommerce": {
@@ -152,8 +187,31 @@
           "Engineered using **Module-based Architecture** for clean code and superior maintainability.",
           "Managed **Data Integrity** with **TypeORM** and strict **Database Migrations**."
         ],
-        "tech": ["NestJS", "TypeScript", "MySQL", "Redis", "Docker"],
+        "tech": [
+          "NestJS",
+          "TypeScript",
+          "MySQL",
+          "Redis",
+          "Docker"
+        ],
         "link": "https://github.com/Vi-et/nestjs-ecommerce"
+      },
+      "portfolio": {
+        "title": "Portfolio AI & Vibe Coding",
+        "description": "Experimental project focused on **Vibe Coding** and **AI Agentic Workflows**.",
+        "achievements": [
+          "Leveraged **AI Agents** to co-architect and implement the entire professional system.",
+          "Applied **Vibe Coding** philosophy for rapid high-fidelity UI/UX development.",
+          "Integrated **GSAP animations** and **multi-language support (i18n)**, SEO optimized."
+        ],
+        "tech": [
+          "Nuxt 4",
+          "Vue 3",
+          "GSAP",
+          "i18n",
+          "AI Agents"
+        ],
+        "link": "https://github.com/Vi-et/portfolio"
       }
     }
   },
@@ -175,7 +233,8 @@
   "contact": {
     "title1": "INITIATE",
     "title2": "CONNECTION",
-    "description": "Available for backend architecture consulting, freelance system refactoring, or full-time senior engineering roles.",
+    "description": "Open to Backend Engineering roles or opportunities to collaborate on developing and optimizing scalable systems.",
+    "cta": "Open to Backend Engineering roles or opportunities to collaborate on developing and optimizing scalable systems.",
     "button": "> send_email()",
     "mail_address": "nhatviet.mkt{'@'}gmail.com",
     "linkedin_url": "https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-nh%E1%BA%ADt-vi%E1%BB%87t-a69288400/",
@@ -184,5 +243,19 @@
     "endpoints": "// SOCIAL_ENDPOINTS",
     "copyright": "ALL SYSTEMS NOMINAL",
     "status": "SERVER_STATUS: ONLINE"
+  },
+  "languages": {
+    "title": "LANGUAGES",
+    "list": [
+      { "name": "English", "level": "Proficient — client communication with AU teams", "code": "en" },
+      { "name": "Japanese", "level": "Basic", "code": "ja" }
+    ]
+  },
+  "interests": {
+    "title": "INTERESTS",
+    "list": [
+      { "name": "Tarot, Philosophy & Psychoanalysis", "icon": "🃏" },
+      { "name": "Optimizing everything", "icon": "⚡" }
+    ]
   }
 }
