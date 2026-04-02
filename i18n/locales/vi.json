@@ -280,7 +280,7 @@
     "title": "NGÔN_NGỮ",
     "list": [
       { "name": "Tiếng Anh", "level": "Đủ để giao tiếp với khách hàng Úc", "code": "en" },
-      { "name": "Tiếng Nhật", "level": "Cơ bản", "code": "ja" }
+      { "name": "Tiếng Nhật", "level": "loading...", "code": "ja" }
     ]
   },
   "interests": {

@@ -280,7 +280,7 @@
     "title": "LANGUAGES",
     "list": [
       { "name": "English", "level": "Proficient — client communication with AU teams", "code": "en" },
-      { "name": "Japanese", "level": "Basic", "code": "ja" }
+      { "name": "Japanese", "level": "loading...", "code": "ja" }
     ]
   },
   "interests": {

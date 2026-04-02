@@ -25,7 +25,7 @@
           <!-- Period badge -->
           <div class="flex items-center gap-3 flex-shrink-0">
             <span class="font-mono text-emerald-500 text-sm tracking-wider">
-              [{{ entry.period }}]
+              [{{ entry.period }} // {{ entry.durationLabel }}]
             </span>
             <span 
               v-if="entry.endLabel" 
@@ -52,20 +52,7 @@
           <span class="font-mono text-emerald-400 text-sm">{{ entry.company }}</span>
         </div>
 
-        <!-- Progress bar -->
-        <div class="pl-4 mb-5">
-          <div class="flex items-center gap-3">
-            <div class="h-2 bg-slate-800 flex-1 max-w-md overflow-hidden">
-              <div 
-                class="progress-fill h-full bg-emerald-500 origin-left"
-                :style="{ width: getProgressWidth(entry.months) }"
-              ></div>
-            </div>
-            <span class="font-mono text-xs text-slate-600 flex-shrink-0">
-              {{ entry.durationLabel }}
-            </span>
-          </div>
-        </div>
+
 
         <!-- Highlights / log entries -->
         <ul class="pl-4 space-y-2 border-l-2 border-slate-800 group-hover:border-emerald-500/30 transition-colors ml-4">
@@ -89,7 +76,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const { tm, rt } = useI18n()
+const { t, tm, rt } = useI18n()
 
 const timelineList = ref<HTMLElement | null>(null)
 
@@ -135,10 +122,10 @@ function getDurationInfo(period: string) {
     const years = Math.floor(months / 12)
     const remainingMonths = months % 12
     label = remainingMonths > 0 
-      ? `${years}${$t('career.years_short')} ${remainingMonths}${$t('career.months_short')}` 
-      : `${years}${$t('career.years_short')}`
+      ? `${years}${t('career.years_short')} ${remainingMonths}${t('career.months_short')}` 
+      : `${years}${t('career.years_short')}`
   } else {
-    label = `${months}${$t('career.months_short')}`
+    label = `${months}${t('career.months_short')}`
   }
 
   return { months, label }
@@ -151,16 +138,7 @@ const careerWithDuration = computed(() => {
   })
 })
 
-const maxMonths = computed(() => {
-  const allMonths = careerWithDuration.value.map(e => e.months)
-  return Math.max(...allMonths, 1) // Avoid division by zero
-})
 
-function getProgressWidth(months: number): string {
-  // Use maxMonths as 100% reference
-  const percentage = (months / maxMonths.value) * 100
-  return `${Math.max(percentage, 5)}%` // Minimum 5% width for visibility
-}
 
 onMounted(() => {
   if (timelineList.value) {
@@ -181,21 +159,7 @@ onMounted(() => {
       }
     )
 
-    // Animate progress bars
-    const progressBars = timelineList.value.querySelectorAll('.progress-fill')
-    gsap.fromTo(progressBars,
-      { scaleX: 0 },
-      {
-        scaleX: 1,
-        duration: 1,
-        stagger: 0.15,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: timelineList.value,
-          start: 'top 80%',
-        }
-      }
-    )
+
   }
 })
 
