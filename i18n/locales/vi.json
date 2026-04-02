@@ -257,5 +257,8 @@
       { "name": "Tarot, Triết học & Phân tâm học", "icon": "🃏" },
       { "name": "Tối ưu mọi thứ", "icon": "⚡" }
     ]
+  },
+  "meta": {
+    "data": "// meta_dữ_liệu"
   }
 }

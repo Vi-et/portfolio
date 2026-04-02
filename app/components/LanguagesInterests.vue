@@ -2,9 +2,9 @@
   <section class="w-full">
     <!-- Section Header -->
     <div class="mb-16">
-      <p class="font-mono text-emerald-500 text-sm mb-2">// meta_data</p>
+      <p class="font-mono text-emerald-500 text-sm mb-2">{{ t('meta.data') }}</p>
       <h2 class="text-4xl sm:text-5xl font-bold tracking-tighter text-slate-100 uppercase">
-        NGÔN_NGỮ &amp; <span class="text-emerald-500">SỞ_THÍCH</span>
+        {{ t('languages.title') }} &amp; <span class="text-emerald-500">{{ t('interests.title') }}</span>
       </h2>
     </div>
 

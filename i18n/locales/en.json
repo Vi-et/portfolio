@@ -257,5 +257,8 @@
       { "name": "Tarot, Philosophy & Psychoanalysis", "icon": "🃏" },
       { "name": "Optimizing everything", "icon": "⚡" }
     ]
+  },
+  "meta": {
+    "data": "// meta_data"
   }
 }
