@@ -1,0 +1,188 @@
+{
+  "name": "Đặng Nhật Việt",
+  "nav": {
+    "career": "CAREER",
+    "projects": "PROJECTS",
+    "stack": "STACK",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "system_ready": "logger.info(\"system ready: OK\")",
+    "title1": "BACKEND",
+    "title2": "ENGINEER",
+    "description": "Building **scalable architectures**, reliable APIs, and bulletproof database schemas. Performance is measured, not assumed.",
+    "view_systems": "View_Systems",
+    "init_contact": "// init_contact"
+  },
+  "career": {
+    "title": "CAREER_LOG",
+    "subtitle": "EXECUTION_HISTORY",
+    "years_short": "y",
+    "months_short": "m",
+    "roles": {
+      "backend": {
+        "period": "2024.12 → 2025.12",
+        "role": "Backend Developer",
+        "company": "Genkin",
+        "highlights": [
+          "Built **CRM**, **Ecommerce**, and **Warehouse management** systems (**tasks, complaints, inbound, logistics**)",
+          "Developed **web scraping pipelines and auction/bidding systems** for JP platforms",
+          "Automated purchasing and bidding workflows on **Mercari, Yahoo Auctions**",
+          "Designed **JPY-VND financial** system with **bank statement crawling**",
+          "**Database schema design** & **zero-downtime migrations**",
+          "**Redis caching** & **job queues** for performance optimization",
+          "**Docker containerization** & **CI/CD pipelines** (GitLab)",
+          "**AWS infrastructure**: S3, EC2, Lambda, LightSail"
+        ]
+      },
+      "pm": {
+        "period": "2024.12 → 2025.03",
+        "role": "Project Manager",
+        "company": "Genkin, Maido",
+        "highlights": [
+          "Managed software development project timelines",
+          "Communicated directly with **Australian clients**",
+          "**Analyzed requirements** & wrote technical specs",
+          "Sprint planning, task delegation, deadline tracking"
+        ]
+      },
+      "appsheet": {
+        "period": "2023.06 → 2024.12",
+        "role": "Appsheet Developer",
+        "company": "Genkin, Maido",
+        "highlights": [
+          "Built CRM Web app & Mobile app using **Appsheet**",
+          "Automated business workflows via **Google AppScript**",
+          "Integrated **Google Workspace APIs** (Sheets, Forms, Drive)",
+          "Trained end-users & authored **user documentation**"
+        ]
+      },
+      "da": {
+        "period": "2022.09 → 2023.06",
+        "role": "Data Analyst",
+        "company": "Genkin",
+        "highlights": [
+          "Setup automated reporting systems: **Google Sheets + Python**",
+          "Built **Looker Studio dashboards** for the leadership team",
+          "Established **operational processes** for CS and Warehouse",
+          "Analyzed data & proposed process **improvements**",
+          "Data cleaning, transformation & **ETL scripts**"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "SYSTEM_ROSTER",
+    "subtitle": "ARCHITECTURES_DEPLOYED",
+    "tabs": {
+      "professional": "[PROFESSIONAL]",
+      "side": "[SIDE_PROJECTS]"
+    },
+    "empty": {
+      "title": "SIDE_PROJECTS.length === 0",
+      "desc1": "Initializing personal projects...",
+      "desc2": "Status:",
+      "status": "IN_DEVELOPMENT",
+      "check_back": "Check back soon."
+    },
+    "list": {
+      "ecommerce": {
+        "title": "Ecommerce Genkin",
+        "description": "Cross-border e-commerce shopping and bidding platform.",
+        "achievements": [
+          "Optimized **Django ORM** for large data crawling pipeline, significantly reducing **N+1 queries**.",
+          "Built automated purchasing & bidding system for **Mercari, Yahoo Auctions** using **Selenium**.",
+          "Designed **Celery async worker** pipeline with retry logic for highly reliable crawling.",
+          "Migrated legacy database schema with **zero downtime** on production.",
+          "Fully automated AWS infra (S3, EC2, Lambda) + **Redis + Docker + GitLab CI/CD**."
+        ],
+        "tech": ["Django", "Celery", "Selenium", "Redis", "AWS", "Docker", "PostgreSQL", "GitLab CI"],
+        "link": "https://ecommerce.genkin.asia/vi"
+      },
+      "crm": {
+        "title": "Genkin CRM",
+        "description": "Internal management system for revenue, finance, orders, warehouse and customers.",
+        "achievements": [
+          "Architected **Security Middleware** & optimized **Advanced Django ORM** for high-load performance.",
+          "Built multi-currency (**JPY/VND**) financial management system with automated bank reconciliation.",
+          "Integrated module for periodic **bank statement retrieval** and transfer matching.",
+          "Reduced dashboard load with **Redis caching layer**; PostgreSQL query optimization.",
+          "**Docker + GitLab CI/CD** pipeline; zero-downtime deployment to AWS."
+        ],
+        "tech": ["Django", "DRF", "PostgreSQL", "Redis", "Docker", "AWS", "GitLab CI"],
+        "link": "https://ecommerce.genkin.asia/vi"
+      },
+      "maido": {
+        "title": "Maido Agency",
+        "description": "Operations management and workflow automation for a marketing agency serving SMEs in Vietnam.",
+        "achievements": [
+          "Integrated **Meta Ads API** to automate data collection across multiple advertising accounts.",
+          "Developed **campaign reporting systems** with real-time performance indicators (KPIs).",
+          "Engineered an **automated alert system** for budget fluctuations and ad performance anomalies."
+        ],
+        "tech": ["Node.js", "MySQL", "Docker", "Redis", "Nginx"],
+        "link": "https://www.facebook.com/maidoagency/"
+      },
+      "infra": {
+        "title": "Cloud & DevOps Infrastructure",
+        "description": "Scalable containerized cloud infrastructure on AWS using **IaC (Terraform)**.",
+        "achievements": [
+          "Containerized the system with **Docker** and used **Nginx** for high-performance proxying.",
+          "Managed AWS infrastructure (VPC, ECS, RDS) with **Terraform** for high availability and scaling.",
+          "Built **100% automated CI/CD** pipelines using **GitLab CI**."
+        ],
+        "tech": ["Terraform", "AWS", "Docker", "GitLab CI", "Nginx"],
+        "link": "https://github.com/Vi-et/infra"
+      },
+      "nodejs_ecommerce": {
+        "title": "NodeJS Backend",
+        "description": "Distributed backend system designed for high-load e-commerce operations.",
+        "achievements": [
+          "Integrated **RabbitMQ** and **Apache Kafka** for asynchronous task handling and data streaming.",
+          "Implemented **Elasticsearch** for high-performance product searching and filtering.",
+          "Built a robust **Inventory Management** system with real-time stock synchronization."
+        ],
+        "tech": ["Node.js", "MongoDB", "Redis", "RabbitMQ", "Elasticsearch"],
+        "link": "https://github.com/Vi-et/nodejs-ecommerce"
+      },
+      "nestjs_ecommerce": {
+        "title": "NestJS Ecommerce",
+        "description": "Scalable, modular backend for e-commerce and content ecosystems built with NestJS.",
+        "achievements": [
+          "Engineered using **Module-based Architecture** for clean code and superior maintainability.",
+          "Managed **Data Integrity** with **TypeORM** and strict **Database Migrations**."
+        ],
+        "tech": ["NestJS", "TypeScript", "MySQL", "Redis", "Docker"],
+        "link": "https://github.com/Vi-et/nestjs-ecommerce"
+      }
+    }
+  },
+  "stack": {
+    "title": "TECH_MATRIX",
+    "categories": {
+      "backend": "Backend",
+      "database": "Databases",
+      "infra": "Infrastructure",
+      "frontend": "Frontend",
+      "other": "Other"
+    }
+  },
+  "certs": {
+    "title": "CERTIFICATIONS",
+    "subtitle": "CONTINUOUS_LEARNING",
+    "verify": "VERIFY_CREDENTIAL"
+  },
+  "contact": {
+    "title1": "INITIATE",
+    "title2": "CONNECTION",
+    "description": "Available for backend architecture consulting, freelance system refactoring, or full-time senior engineering roles.",
+    "button": "> send_email()",
+    "mail_address": "nhatviet.mkt{'@'}gmail.com",
+    "linkedin_url": "https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-nh%E1%BA%ADt-vi%E1%BB%87t-a69288400/",
+    "facebook_url": "https://www.facebook.com/vqahihihihi",
+    "phone": "0342392607",
+    "endpoints": "// SOCIAL_ENDPOINTS",
+    "copyright": "ALL SYSTEMS NOMINAL",
+    "status": "SERVER_STATUS: ONLINE"
+  }
+}

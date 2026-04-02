@@ -1,0 +1,229 @@
+{
+  "name": "Đặng Nhật Việt",
+  "nav": {
+    "career": "SỰ_NGHIỆP",
+    "projects": "DỰ_ÁN",
+    "stack": "CÔNG_NGHỆ",
+    "contact": "LIÊN_HỆ"
+  },
+  "hero": {
+    "system_ready": "logger.info(\"hệ thống sẵn sàng: OK\")",
+    "title1": "BACKEND",
+    "title2": "ENGINEER",
+    "description": "Xây dựng **kiến trúc hệ thống mở rộng**, API đáng tin cậy và database schema vững chắc. Hiệu suất được đo lường, không giả định.",
+    "view_systems": "Xem_Hệ_Thống",
+    "init_contact": "// kb_liên_hệ"
+  },
+  "career": {
+    "title": "LỊCH_SỬ_SỰ_NGHIỆP",
+    "subtitle": "QUÁ_TRÌNH_LÀM_VIỆC",
+    "years_short": "n",
+    "months_short": "th",
+    "roles": {
+      "backend": {
+        "period": "2024.12 → 2025.12",
+        "role": "Lập trình viên Backend",
+        "company": "Genkin",
+        "highlights": [
+          "Xây dựng hệ thống **CRM**, **Ecommerce**, và **Quản lý kho** (**task, khiếu nại, nhập kho, vận chuyển**)",
+          "Phát triển **hệ thống cào dữ liệu và đấu giá** cho các sàn Nhật JP",
+          "Tự động hóa quy trình mua hàng và đấu giá trên **Mercari, Yahoo Auctions**",
+          "Thiết kế hệ thống **đồng bộ tài chính JPY-VND** với tính năng **cào sao kê ngân hàng**",
+          "**Thiết kế database schema** & **cập nhật hạ tầng không downtime**",
+          "Sử dụng **Redis caching** & **job queues** để **tối ưu hiệu suất (performance optimization)**",
+          "**Docker containerization** & **CI/CD pipelines** (GitLab)",
+          "**Hạ tầng AWS (AWS infrastructure)**: S3, EC2, Lambda, LightSail"
+        ]
+      },
+      "pm": {
+        "period": "2024.12 → 2025.03",
+        "role": "Quản lý Dự án (Project Manager)",
+        "company": "Genkin, Maido",
+        "highlights": [
+          "Quản lý tiến độ dự án phát triển phần mềm",
+          "Giao tiếp trực tiếp với **khách hàng Úc**",
+          "**Phân tích yêu cầu (requirements)** & viết đặc tả kỹ thuật (technical specs)",
+          "Lập kế hoạch sprint, phân chia công việc, theo dõi deadline"
+        ]
+      },
+      "appsheet": {
+        "period": "2023.06 → 2024.12",
+        "role": "Lập trình viên Appsheet",
+        "company": "Genkin, Maido",
+        "highlights": [
+          "Xây dựng ứng dụng CRM Web & Mobile bằng **Appsheet**",
+          "Tự động hóa quy trình nghiệp vụ bằng **Google AppScript**",
+          "Tích hợp **Google Workspace APIs** (Sheets, Forms, Drive)",
+          "Đào tạo người dùng cuối (end-users) & viết **tài liệu hướng dẫn**"
+        ]
+      },
+      "da": {
+        "period": "2022.09 → 2023.06",
+        "role": "Chuyên viên Phân tích Dữ liệu (Data Analyst)",
+        "company": "Genkin",
+        "highlights": [
+          "Thiết lập hệ thống báo cáo tự động: **Google Sheets + Python**",
+          "Xây dựng **dashboards Looker Studio** cho ban lãnh đạo (leadership team)",
+          "Xây dựng **quy trình vận hành** cho bộ phận CS và Kho",
+          "Phân tích dữ liệu & đề xuất **cải thiện** quy trình",
+          "Làm sạch, biến đổi dữ liệu & viết **ETL scripts**"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "DANH_MỤC_HỆ_THỐNG",
+    "subtitle": "KIẾN_TRÚC_ĐÃ_TRIỂN_KHAI",
+    "tabs": {
+      "professional": "[CHUYÊN_NGHIỆP]",
+      "side": "[DỰ_ÁN_PHỤ]"
+    },
+    "empty": {
+      "title": "SIDE_PROJECTS.length === 0",
+      "desc1": "Đang khởi tạo các dự án cá nhân...",
+      "desc2": "Trạng thái:",
+      "status": "ĐANG_PHÁT_TRIỂN",
+      "check_back": "Vui lòng quay lại sau."
+    },
+    "list": {
+      "ecommerce": {
+        "title": "Ecommerce Genkin",
+        "description": "Nền tảng thương mại điện tử mua sắm xuyên biên giới và đấu giá.",
+        "achievements": [
+          "Tối ưu **Django ORM** để xử lý pipeline dữ liệu crawl lớn, giảm đáng kể các **truy vấn N+1 (N+1 queries)**.",
+          "Xây dựng hệ thống tự động mua hàng & đấu giá trên **Mercari, Yahoo Auctions** bằng **Selenium**.",
+          "Thiết kế pipeline **Celery async worker** với logic phản hồi (retry) để đảm bảo độ tin cậy khi crawl.",
+          "**Cập nhật hạ tầng (migration)** mà **không gây downtime** trên hệ thống production.",
+          "Hạ tầng **AWS** (S3, EC2, Lambda) + **Redis + Docker + GitLab CI/CD** tự động hoàn toàn."
+        ],
+        "tech": [
+          "Django",
+          "Celery",
+          "Selenium",
+          "Redis",
+          "AWS",
+          "Docker",
+          "PostgreSQL",
+          "GitLab CI"
+        ],
+        "link": "https://ecommerce.genkin.asia/vi"
+      },
+      "crm": {
+        "title": "Genkin CRM",
+        "description": "Hệ thống quản trị nội bộ xử lý doanh thu, tài chính, đơn hàng, kho bãi và khách hàng.",
+        "achievements": [
+          "Kiến trúc **Security Middleware** & tối ưu hóa hiệu suất truy vấn **Django ORM** chuyên sâu.",
+          "Xây dựng hệ thống quản lý dòng tiền đa tệ (**JPY/VND**) và tự động đối soát ngân hàng.",
+          "Tích hợp module tự động lấy **sao kê ngân hàng** định kỳ và khớp lệnh chuyển khoản.",
+          "Sử dụng **Redis caching layer** để giảm tải dashboard; tối ưu hóa truy vấn PostgreSQL.",
+          "Thiết kế quy trình **Docker + GitLab CI/CD**; triển khai lên AWS không gây gián đoạn (zero-downtime)."
+        ],
+        "tech": [
+          "Django",
+          "DRF",
+          "PostgreSQL",
+          "Redis",
+          "Docker",
+          "AWS",
+          "GitLab CI"
+        ],
+        "link": "https://ecommerce.genkin.asia/vi"
+      },
+      "maido": {
+        "title": "Maido Agency",
+        "description": "Giải pháp quản trị và tự động hoá quy trình cho Marketing Agency phục vụ SMEs tại Việt Nam.",
+        "achievements": [
+          "Tích hợp **Meta Ads API** để tự động hóa việc thu thập dữ liệu quảng cáo từ nhiều tài khoản.",
+          "Xây dựng hệ thống **báo cáo chiến dịch** với các chỉ số hiệu suất (KPIs) theo thời gian thực.",
+          "Phát triển **hệ thống cảnh báo tự động** khi ngân sách hoặc hiệu quả quảng cáo biến động bất thường."
+        ],
+        "tech": [
+          "Node.js",
+          "MySQL",
+          "Docker",
+          "Redis",
+          "Nginx"
+        ],
+        "link": "https://www.facebook.com/maidoagency/"
+      },
+      "infra": {
+        "title": "Cấu trúc hạ tầng DevOps & Cloud",
+        "description": "Kiến trúc hạ tầng container hóa mở rộng trên AWS sử dụng **IaC (Terraform)**.",
+        "achievements": [
+          "Container hóa toàn bộ hệ thống bằng **Docker** và sử dụng **Nginx** làm proxy hiệu suất cao.",
+          "Quản lý hạ tầng AWS (VPC, ECS, RDS) bằng **Terraform** để mở rộng linh hoạt.",
+          "Xây dựng quy trình **tự động hóa CI/CD 100%** bằng **GitLab CI**."
+        ],
+        "tech": [
+          "Terraform",
+          "AWS",
+          "Docker",
+          "GitLab CI",
+          "Nginx"
+        ],
+        "link": "https://github.com/Vi-et/infra"
+      },
+      "nodejs_ecommerce": {
+        "title": "NodeJS Backend",
+        "description": "Hệ thống backend phân tán được thiết kế cho các hoạt động thương mại điện tử tải cao.",
+        "achievements": [
+          "Tích hợp **RabbitMQ** và **Apache Kafka** để xử lý tác vụ bất đồng bộ và streaming dữ liệu.",
+          "Triển khai **Elasticsearch** để tìm kiếm và lọc sản phẩm hiệu suất cao.",
+          "Xây dựng hệ thống **Quản lý Kho hàng** mạnh mẽ với tính năng đồng bộ hóa tồn kho theo thời gian thực (real-time)."
+        ],
+        "tech": [
+          "Node.js",
+          "MongoDB",
+          "Redis",
+          "RabbitMQ",
+          "Elasticsearch"
+        ],
+        "link": "https://github.com/Vi-et/nodejs-ecommerce"
+      },
+      "nestjs_ecommerce": {
+        "title": "NestJS Ecommerce",
+        "description": "Hệ thống backend mở rộng, kiến trúc mô-đun cho hệ sinh thái TMĐT & Nội dung xây dựng bằng NestJS.",
+        "achievements": [
+          "Thiết kế theo **Kiến trúc Mô-đun (Module-based)** giúp mã nguồn sạch và dễ bảo trì.",
+          "Quản lý **Tính toàn vẹn dữ liệu (Data Integrity)** với **TypeORM** và quy trình **Database Migrations** chặt chẽ."
+        ],
+        "tech": [
+          "NestJS",
+          "TypeScript",
+          "MySQL",
+          "Redis",
+          "Docker"
+        ],
+        "link": "https://github.com/Vi-et/nestjs-ecommerce"
+      }
+    }
+  },
+  "stack": {
+    "title": "MA_TRẬN_CÔNG_NGHỆ",
+    "categories": {
+      "backend": "Backend",
+      "database": "Databases",
+      "infra": "Infrastructure",
+      "frontend": "Frontend",
+      "other": "Khác"
+    }
+  },
+  "certs": {
+    "title": "CHỨNG_CHỈ",
+    "subtitle": "HỌC_TẬP_LIÊN_TỤC",
+    "verify": "XÁC_MINH"
+  },
+  "contact": {
+    "title1": "KHỞI_TẠO",
+    "title2": "KẾT_NỐI",
+    "description": "Sẵn sàng cho các hợp đồng tư vấn kiến trúc backend, tối ưu hệ thống tự do (freelance system refactor), hoặc các vị trí kỹ sư cấp cao (senior engineering) toàn thời gian.",
+    "button": "> gửi_email()",
+    "mail_address": "nhatviet.mkt{'@'}gmail.com",
+    "linkedin_url": "https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-nh%E1%BA%ADt-vi%E1%BB%87t-a69288400/",
+    "facebook_url": "https://www.facebook.com/vqahihihihi",
+    "phone": "0342392607",
+    "endpoints": "// LIÊN_KẾT_MẠNG_XÃ_HỘI",
+    "copyright": "TẤT CẢ HỆ THỐNG HOẠT ĐỘNG BÌNH THƯỜNG",
+    "status": "TRẠNG_THÁI_MÁY_CHỦ: ONLINE"
+  }
+}
