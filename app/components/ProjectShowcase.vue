@@ -50,7 +50,7 @@
         v-if="activeTab === 'professional'" 
         key="professional" 
         ref="professionalList" 
-        class="flex flex-col border-t-0"
+        class="flex flex-col border-t-0 min-h-0"
       >
         <a 
           v-for="(project, index) in professionalProjects" 
@@ -96,7 +96,7 @@
         v-else 
         key="side" 
         ref="sideList" 
-        class="flex flex-col border-t-0"
+        class="flex flex-col border-t-0 min-h-0"
       >
         <a 
           v-for="(project, index) in sideProjects" 

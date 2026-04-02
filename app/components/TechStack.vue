@@ -83,14 +83,14 @@
       <div class="stack-box border-r-2 border-b-2 border-slate-800 p-8 hover:bg-emerald-500/5 transition-colors duration-300">
         <h3 class="font-mono text-emerald-500 mb-6 text-lg uppercase tracking-widest border-b border-slate-700 pb-2">{{ $t('stack.categories.other') }}</h3>
         <ul class="space-y-4 font-bold text-xl sm:text-2xl text-slate-300">
-          <li class="group flex items-center gap-3 hover:text-emerald-400 cursor-default transition-colors">
-            <Icon name="simple-icons:google" class="text-slate-500 group-hover:text-emerald-400 transition-colors" /> App Script
+          <li class="group flex items-center gap-3 hover:text-emerald-400 cursor-default transition-colors whitespace-nowrap">
+            <Icon name="simple-icons:google" class="text-slate-500 group-hover:text-emerald-400 transition-colors flex-shrink-0" /> App Script
           </li>
-          <li class="group flex items-center gap-3 hover:text-emerald-400 cursor-default transition-colors">
-            <Icon name="simple-icons:google" class="text-slate-500 group-hover:text-emerald-400 transition-colors" /> AppSheet
+          <li class="group flex items-center gap-3 hover:text-emerald-400 cursor-default transition-colors whitespace-nowrap">
+            <Icon name="simple-icons:google" class="text-slate-500 group-hover:text-emerald-400 transition-colors flex-shrink-0" /> AppSheet
           </li>
-          <li class="group flex items-center gap-3 hover:text-emerald-400 cursor-default transition-colors">
-            <Icon name="simple-icons:google" class="text-slate-500 group-hover:text-emerald-400 transition-colors" /> Looker Studio
+          <li class="group flex items-center gap-3 hover:text-emerald-400 cursor-default transition-colors whitespace-nowrap">
+            <Icon name="simple-icons:looker" class="text-slate-500 group-hover:text-emerald-400 transition-colors flex-shrink-0" /> Looker Studio
           </li>
         </ul>
       </div>

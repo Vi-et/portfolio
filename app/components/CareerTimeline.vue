@@ -13,7 +13,7 @@
     <!-- Terminal-style career log -->
     <div ref="timelineList" class="flex flex-col border-t-2 border-slate-800">
       <div 
-        v-for="(entry, index) in career" 
+        v-for="(entry, index) in careerWithDuration" 
         :key="index"
         class="timeline-entry group border-b border-slate-800 py-8 px-2 relative overflow-hidden hover:bg-slate-900/50 transition-colors duration-300"
       >
@@ -58,11 +58,11 @@
             <div class="h-2 bg-slate-800 flex-1 max-w-md overflow-hidden">
               <div 
                 class="progress-fill h-full bg-emerald-500 origin-left"
-                :style="{ width: getProgressWidth(index) }"
+                :style="{ width: getProgressWidth(entry.months) }"
               ></div>
             </div>
             <span class="font-mono text-xs text-slate-600 flex-shrink-0">
-              {{ getDuration(entry.period) }}
+              {{ entry.durationLabel }}
             </span>
           </div>
         </div>
@@ -114,36 +114,52 @@ const career = computed<CareerEntry[]>(() => {
   })
 })
 
-function getProgressWidth(index: number): string {
-  const widths = ['100%', '30%', '75%', '45%']
-  return widths[index] || '50%'
-}
-
-function getDuration(period: string): string {
+function getDurationInfo(period: string) {
   const parts = period.split('→').map(p => p.trim())
-  if (parts.length < 2) return ''
+  if (parts.length < 2) return { months: 0, label: '' }
 
   const parseDate = (s: string): Date => {
     const segments = s.split('.')
-    const year = Number(segments[0]) || 2022
-    const month = Number(segments[1]) || 1
+    const year = Number(segments[0] || '2022')
+    const month = Number(segments[1] || '1')
     return new Date(year, month - 1)
   }
 
-  const startStr = parts[0] ?? ''
-  const endStr = parts[1] ?? ''
-  const start = parseDate(startStr)
-  const end = parseDate(endStr)
-  const months = Math.round((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24 * 30))
-  
+  const start = parseDate(parts[0])
+  const end = parseDate(parts[1])
+  const diffTime = Math.abs(end.getTime() - start.getTime())
+  const months = Math.round(diffTime / (1000 * 60 * 60 * 24 * 30.44)) // Use average month length
+
+  let label = ''
   if (months >= 12) {
     const years = Math.floor(months / 12)
     const remainingMonths = months % 12
-    return remainingMonths > 0 
+    label = remainingMonths > 0 
       ? `${years}${$t('career.years_short')} ${remainingMonths}${$t('career.months_short')}` 
       : `${years}${$t('career.years_short')}`
+  } else {
+    label = `${months}${$t('career.months_short')}`
   }
-  return `${months}${$t('career.months_short')}`
+
+  return { months, label }
+}
+
+const careerWithDuration = computed(() => {
+  return career.value.map(entry => {
+    const info = getDurationInfo(entry.period)
+    return { ...entry, months: info.months, durationLabel: info.label }
+  })
+})
+
+const maxMonths = computed(() => {
+  const allMonths = careerWithDuration.value.map(e => e.months)
+  return Math.max(...allMonths, 1) // Avoid division by zero
+})
+
+function getProgressWidth(months: number): string {
+  // Use maxMonths as 100% reference
+  const percentage = (months / maxMonths.value) * 100
+  return `${Math.max(percentage, 5)}%` // Minimum 5% width for visibility
 }
 
 onMounted(() => {

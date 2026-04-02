@@ -2,7 +2,7 @@
   <section class="w-full">
     <!-- Section Header -->
     <div class="mb-16">
-      <p class="font-mono text-emerald-500 text-sm mb-2">{{ t('meta.data') }}</p>
+      <p class="font-mono text-emerald-500 text-sm mb-2">/* 05 */</p>
       <h2 class="text-4xl sm:text-5xl font-bold tracking-tighter text-slate-100 uppercase">
         {{ t('languages.title') }} &amp; <span class="text-emerald-500">{{ t('interests.title') }}</span>
       </h2>

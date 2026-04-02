@@ -228,7 +228,39 @@
   "certs": {
     "title": "CHỨNG_CHỈ",
     "subtitle": "HỌC_TẬP_LIÊN_TỤC",
-    "verify": "XÁC_MINH"
+    "verify": "XÁC_MINH",
+    "list": [
+      {
+        "title": "DevOps Deployment Automation with Terraform, AWS and Docker",
+        "platform": "Udemy",
+        "id": "UC-488b0f96-388e",
+        "link": "https://www.udemy.com/certificate/UC-488b0f96-388e-4cca-b3e1-02ed172c2560/"
+      },
+      {
+        "title": "Fundamentals of Database Engineering",
+        "platform": "Udemy",
+        "id": "UC-94ba15c0-f451",
+        "link": "https://www.udemy.com/certificate/UC-94ba15c0-f451-4930-b419-b391e154fc77/"
+      },
+      {
+        "title": "Master the Coding Interview: Data Structures + Algorithms",
+        "platform": "Udemy",
+        "id": "UC-eec69814-bac8",
+        "link": "https://www.udemy.com/certificate/UC-eec69814-bac8-4e3a-8ace-7b07ea758c4b/"
+      },
+      {
+        "title": "Thành Thạo Docker Từ Cơ Bản Đến Nâng Cao",
+        "platform": "Udemy",
+        "id": "UC-92f82cb1-c0b2",
+        "link": "https://www.udemy.com/certificate/UC-92f82cb1-c0b2-43db-ae22-25aacb1d714a/"
+      },
+      {
+        "title": "Làm Chủ Git và GitHub Từ A đến Z",
+        "platform": "Udemy",
+        "id": "UC-d630c4cd-70a1",
+        "link": "https://www.udemy.com/certificate/UC-d630c4cd-70a1-4ee9-88c8-e343ff6ae271/"
+      }
+    ]
   },
   "contact": {
     "title1": "KHỞI_TẠO",

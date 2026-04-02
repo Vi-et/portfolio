@@ -4,6 +4,8 @@
     <div class="relative z-10 w-full" ref="heroContent">
       <h1 class="text-6xl sm:text-7xl md:text-[8rem] lg:text-[10rem] font-bold leading-[0.85] tracking-tighter text-slate-100 uppercase">
         <span class="block text-emerald-500 opacity-60 font-mono text-sm md:text-xl tracking-widest mb-4">{{ $t('hero.system_ready') }}</span>
+        <!-- Name label — visible identity for recruiters -->
+        <span class="block font-mono text-sm md:text-base text-slate-500 tracking-widest mb-2 uppercase">{{ $t('name') }} //</span>
         <span class="block overflow-hidden relative group">
           <span class="relative z-10">{{ $t('hero.title1') }}</span>
           <!-- A brutalist glitch/shadow effect achieved through text duplication -->
@@ -27,8 +29,8 @@
       </div>
     </div>
     
-    <!-- Brutalist decorative elements -->
-    <div class="absolute right-0 top-1/2 -translate-y-1/2 opacity-20 pointer-events-none hidden lg:block">
+    <!-- Brutalist decorative elements: only shown on xl to avoid layout shifts -->
+    <div class="absolute right-0 top-1/2 -translate-y-1/2 opacity-20 pointer-events-none hidden xl:block" aria-hidden="true">
       <div class="font-mono text-xs leading-[1.2] whitespace-pre text-emerald-500 select-none">
         01000010 01000001
         01000011 01001011
