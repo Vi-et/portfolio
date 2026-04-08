@@ -231,6 +231,12 @@
     "verify": "VERIFY_CREDENTIAL",
     "list": [
       {
+        "title": "NodeJS Internals and Architecture",
+        "platform": "Udemy",
+        "id": "UC-fa1e1c73-aa7c",
+        "link": "https://www.udemy.com/certificate/UC-fa1e1c73-aa7c-4b75-b7d1-f613ee42f882/"
+      },
+      {
         "title": "DevOps Deployment Automation with Terraform, AWS and Docker",
         "platform": "Udemy",
         "id": "UC-488b0f96-388e",
