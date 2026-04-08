@@ -10,7 +10,7 @@
     "system_ready": "logger.info(\"hệ thống sẵn sàng: OK\")",
     "title1": "BACKEND",
     "title2": "ENGINEER",
-    "description": "Xây dựng **kiến trúc hệ thống mở rộng**, API tin cậy, database schema vững chắc và hiệu suất có thể đo lường.",
+    "description": "Xây dựng **kiến trúc mở rộng** và API tin cậy với **nền tảng chuyên sâu về Database, Node.js và Python**.",
     "view_systems": "Dự_án",
     "init_contact": "// liên_hệ"
   },
@@ -21,7 +21,7 @@
     "months_short": "th",
     "roles": {
       "backend": {
-        "period": "2024.12 → 2025.12",
+        "period": "2024.06 → 2025.12",
         "role": "Lập trình viên Backend",
         "company": "Genkin",
         "highlights": [
