@@ -29,6 +29,9 @@
           <li class="group flex items-center gap-3 hover:text-emerald-400 cursor-default transition-colors">
             <Icon name="simple-icons:flask" class="text-slate-500 group-hover:text-emerald-400 transition-colors" /> Flask
           </li>
+          <li class="group flex items-center gap-3 hover:text-emerald-400 cursor-default transition-colors">
+            <Icon name="simple-icons:go" class="text-slate-500 group-hover:text-emerald-400 transition-colors" /> Go
+          </li>
         </ul>
       </div>
 

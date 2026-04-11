@@ -212,6 +212,25 @@
           "AI Agents"
         ],
         "link": "https://github.com/Vi-et/portfolio"
+      },
+      "go_api": {
+        "title": "Greenlight — Go REST API",
+        "description": "Production-ready REST API xây dựng bằng **Go** thuần theo tiêu chuẩn kiến trúc từ *Let's Go Further*. Chú trọng tính **maintainable, observable và reliable**.",
+        "achievements": [
+          "Kiến trúc phân tầng **Layered Architecture** (httprouter → Handlers → Models → PostgreSQL) tách biệt hoàn toàn logic HTTP và business.",
+          "Hệ thống **Authentication & Authorization** với JWT Bearer Token, phân quyền theo permissions (movies:read, movies:write).",
+          "**Rate Limiting** (token bucket per-IP), **CORS middleware**, **Graceful Shutdown** bắt SIGINT/SIGTERM.",
+          "**Structured JSON Logging** (INFO/ERROR/FATAL), **Metrics Monitoring** với expvar, **Background Email Processing** với goroutines.",
+          "**Database Migrations** (golang-migrate), **connection pooling** PostgreSQL và **zero-downtime deploy** pattern."
+        ],
+        "tech": [
+          "Go",
+          "PostgreSQL",
+          "httprouter",
+          "Docker",
+          "Makefile"
+        ],
+        "link": "https://github.com/Vi-et/go"
       }
     }
   },
